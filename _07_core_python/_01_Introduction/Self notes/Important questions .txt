@@ -1,0 +1,75 @@
+How interpreter works in python?
+			
+	Instead of translating source code to machine code like C++, Python code it translated to bytecode.This bytecode is a low-level set of instructions 
+that can be executed by an interpreter.An interpreter is also a translator, just like a compiler, in that it takes a high level language (our source text) 
+and converts it into machine code. However, it does something slightly different: it actually runs and executes the code that it translates immediately (inline)
+as it translates.
+
+Python features?
+1.Easy Language. Python is an easy language. ...
+2.Readable. The Python language is designed to make developers life easy. ...
+3.Interpreted Language. ...
+4.Dynamically-Typed Language. ...
+5.Object-Oriented. ...
+6.Popular and Large Community Support. ...
+7.Open-Source. ...
+8.Large Standard Library.
+
+Interpreter CPython IronPython Jython?
+CPython:
+	CPython is the reference implementation of the Python programming language. Written in C and Python, CPython is the default and 
+most widely used implementation of the Python language.CPython can be defined as both an interpreter and a compiler as it compiles 
+Python code into bytecode before interpreting it. It has a foreign function interface with several languages, including C, 
+in which one must explicitly write bindings in a language other than Python.
+IronPython:
+	IronPython is an open-source implementation of the Python programming language which is tightly integrated with .NET. 
+IronPython can use .NET and Python libraries, and other .NET languages can use Python code just as easily.
+Jython:
+	Jython is a version of the Python programming language that runs on the Java platform. It allows users to write programs in Python and 
+compile them to Java bytecodes that run directly on a Java Virtual Machine, or JVM. It’s similar to otherJVM languages like;Scala, Kotlin, Groovy, or Clojur.
+
+Dynamically typed programming language?
+	Dynamically-typed languages are those (like JavaScript) where the interpreter assigns variables a type at runtime based on the variable's value at the time
+
+Procedure Oriented vs Object oriented programming languages?
+     Procedural Oriented Programming	                                                                               Object Oriented Programming
+1.In procedural programming, program is divided into small parts called functions.	 1.In object oriented programming, program is divided into small parts 
+                                                                                       called objects.
+2.Procedural programming follows top down approach.	                                 2.Object oriented programming follows bottom up approach.
+3.There is no access specifier in procedural programming.	                         3.Object oriented programming have access specifiers like private, 
+                                                                                       public, protected etc.
+4.Adding new data and function is not easy.	                                         4.Adding new data and function is easy.
+5.Procedural programming does not have any proper way for hiding data 
+  so it is less secure.	                                                             5.Object oriented programming provides data hiding so it is more secure.
+6.In procedural programming, overloading is not possible.	                         6.Overloading is possible in object oriented programming.
+7.In procedural programming, function is more important than data.	                 7.In object oriented programming, data is more important than function.
+8.Procedural programming is based on unreal world.	                                 8.Object oriented programming is based on real world.
+9.Examples: C, FORTRAN, Pascal, Basic etc.	                                         9.Examples: C++, Java, Python, C# etc.
+
+
+
+Setting path in python. Importance:
+Before starting working with Python, a specific path is to set. Your Python program and executable code can reside in any directory of your system, 
+therefore Operating System provides a specific search path that index the directories Operating System should search for executable code.
+
+
+Environment variables importance in python:
+Environment variables help programs know what directory to install files in, where to store temporary files, and where to find user profile settings. 
+They help shape the environment that the programs on your computer use to run.
+
+Different ways to run python program:
+Here are the ways with which we can run a Python script.
+Interactive Mode.
+Command Line.
+Text Editor (VS Code)
+IDE (PyCharm)
+
+
+source file:
+Python source files are files that contain Python source code. 
+PYW files are invoked on pythonw.exe instead of python.exe in order to prevent a DOS console from popping up to display the output.
+
+compiler:
+Python is an interpreted programming language and has different execution environments. ... The compiler is a special program that is 
+written in a specific programming language to convert the human-readable language i.e. high-level language to machine-readable language
+ i.e. low-level language

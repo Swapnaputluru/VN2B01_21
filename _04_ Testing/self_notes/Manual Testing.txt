@@ -1,0 +1,28 @@
+Manual Testing
+	Manual testing is a software testing process in which test cases are executed manually without using any automated tool. 
+All test cases executed by the tester manually according to the end user's perspective. It ensures whether the application is working, 
+as mentioned in the requirement document or not. Test cases are planned and implemented to complete almost 100 percent of the software application. 
+Test case reports are also generated manually.
+Manual Testing is one of the most fundamental testing processes as it can find both visible and hidden defects of the software. 
+The difference between expected output and output, given by the software, is defined as a defect. The developer fixed the defects and 
+handed it to the tester for retesting.
+Manual testing is mandatory for every newly developed software before automated testing. This testing requires great efforts and time, 
+but it gives the surety of bug-free software. Manual Testing requires knowledge of manual testing techniques but not of any automated testing tool.
+
+Manual testing is essential because one of the software testing fundamentals is "100% automation is not possible."
+
+Advantages of Manual Testing:
+1.It does not require programming knowledge while using the Black box method.
+2.It is used to test dynamically changing GUI designs.
+3.Tester interacts with software as a real user so that they are able to discover usability and user interface issues.
+4.It ensures that the software is a hundred percent bug-free.
+5.It is cost-effective.
+6.Easy to learn for new testers.
+
+Disadvantages of Manual Testing:
+1.It requires a large number of human resources.
+2.It is very time-consuming.
+3.Tester develops test cases based on their skills and experience. There is no evidence that they have covered all functions or not.
+4.Test cases cannot be used again. Need to develop separate test cases for each new software.
+5.It does not provide testing on all aspects of testing.
+6.Since two teams work together, sometimes it is difficult to understand each other's motives, it can mislead the process

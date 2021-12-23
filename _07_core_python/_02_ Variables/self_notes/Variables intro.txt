@@ -1,0 +1,14 @@
+What is Variable?
+	Variable is container to store values.Variables do not need to be declared with any particular  data type.
+Ex: a=10
+Here a is the variable,10 is the value ,= is the operator
+
+What are the rules for python variables?
+1.Only use lower case letters. 
+2.variables don't start with numbers.If we want ,we can use underscore(_).
+3.Variable names are case-sensitive.( name,Name and NAME all are different variables).
+
+what are the data types?
+1.ineteger (numaric values).
+2.Float ( decimal values).
+3.Boolean (True or False).

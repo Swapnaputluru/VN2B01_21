@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Regitration</title>
+            <style>
+                form{
+                    width: 40%;
+                    height: 60%;
+                    background-color: cadetblue;
+                    text-align: center;
+                    padding: 10px;
+                    
+                }
+            </style> 
+        </head>
+    <body>
+        <h2>Register Here</h2>
+        <form action="data.html">
+            <label for="Firstname"><b>Firstname:</b></label><br/>
+            <input type="text" id="Firstname" name="Firstname" required><br/><br/>
+            <label for="Lastname"><b>Lastname:</b></label><br/>
+            <input type="text" id="Lastname" name="Lastname" required><br/><br/>
+            <label for="Mobile.No"><b>Mobile.No:</b></label><br/>
+            <input type="text" id="Mobile.No" name="Mobile.No" pattern="[0-9]{10}" title="10digit mobile number" required><br/><br/>
+            <label for="Password"><b>Password:</b></label><br/>
+            <input type="password" id="password" name="password" required><br/><br/>
+            <label for="Confirm Password"><b>Confirm Password:</b></label><br/>
+            <input type="Confirm password" id="Confirm password" name="Confirm password" required><br/><br/>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
