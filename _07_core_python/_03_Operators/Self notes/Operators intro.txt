@@ -1,0 +1,18 @@
+Python Operators:
+1.Operators are used to perform operations on variables and values.
+2.Operators are special symbols in Python that carry out arithmetic or logical computation. 
+3.The value that the operator operates on is called the operand. Here, + is the operator that performs addition. 
+4.2 and 3 are the operands and 5 is the output of the operation.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Python Operators groups:
+*Arithmetic operators--Arithmetic operators are used with numeric values to perform common mathematical operations
+		       Addition(+),Subtraction(-),Multiplication(*),Division(/),Modulus(%),Exponentiation(** i.e 2**4=2*2*2*2),Floor division(//)			
+*Assignment operators--Assignment operators are used to assign values to variables.[=, +=, -=, *=, %= etc]
+*Comparison operators--Comparison operators are used to compare two values. [==, !=, <, >, <=, >= etc]
+*Logical operators----Logical operators are used to combine conditional statements.[and, or, not]
+*Identity operators---Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, 
+                      with the same memory location. [is, is not]
+*Membership operators---Membership operators are used to test if a sequence is presented in an object.[in, not in]
+*Bitwise operators-----Bitwise operators are used to compare (binary) numbers.[|, &, ^, <<, >>]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

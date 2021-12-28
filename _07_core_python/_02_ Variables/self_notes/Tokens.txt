@@ -1,0 +1,34 @@
+Token:
+	A token is the smallest individual unit in a python program. 
+All statements and instructions in a program are built with tokens. 
+The various tokens in python are :
+1.Keywords
+2.Identifirers
+3.Literals
+4.Operators
+5.Constants
+----------------------------------------------------------------------------------------------------------------------------------------------
+1.Keywords:
+	Keywords are words that have some special meaning or significance in a programming language. 
+They can’t be used as variable names, function names, or any other random purpose. They are used for their special features. 
+In Python we have 33 keywords some of them are: try, False, True, class, break, continue, and, as, 
+assert, while, for, in, raise, except, or, not, if, elif, print, import, etc
+------------------------------------------------------------------------------------------------------------------------------------------------
+2.Identifirers:
+	 Identifiers are the names given to any variable, function, class, list, methods, etc. for their identification. 
+Python is a case-sensitive language and it has some rules and regulations to name an identifier.
+------------------------------------------------------------------------------------------------------------------------------------------------
+3.Literals:
+	Literals are the fixed values or data items used in a source code. 
+Python supports different types of literals such as Integer,float,bollean,String.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+4. Operators: 
+	These are the tokens responsible to perform an operation in an expression. 
+The variables on which operation is applied are called operands. Operators can be unary or binary. 
+Unary operators are the ones acting on a single operand like complement operator, etc. 
+While binary operators need two operands to operate.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+5.Constants:
+	constant is a type of variable whose value cannot be changed.
+Ex:Weeks and months and gravity and pi value ie.22/7 etc
+---------------------------------------------------------------------------------------------
