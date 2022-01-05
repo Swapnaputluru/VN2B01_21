@@ -1,0 +1,57 @@
+Loops:
+-----
+Loops are important in Python or in any other programming language as they help you to execute a block of code repeatedly. 
+You will often come face to face with situations where you would need to use a piece of code over and over 
+but you don't want to write the same line of code multiple times.
+
+Type of loops:
+-------------
+1.For loop
+2.While loop
+3.Do-while loop
+
+For loop:
+--------
+*A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+*A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied. 
+*Such a type of statement is also known as an iterative statement. Therefore, a for loop is an iterative statement.
+
+Ex:
+ x = "Welcome"
+ For i in x:
+     print(i)
+
+here x = variable
+     i = duplicate variable
+     for is the keyword of for loop.
+output is showing below:
+W
+e
+l
+c
+o
+m
+e
+
+Control statements in loops:
+----------------------------
+Control statements in python are used to control the order of execution of the program based on the values and logic.
+1.Break
+2.Continue
+3.Pass
+
+1.Break:
+-------
+The break statement is used to terminate the loop containing it, the control of the program will come out of that loop.
+Use "break" keyword to break the loop.
+
+2.Continue:
+----------
+When the program encounters a continue statement, it will skip the statements which are present after the continue statement inside the loop and 
+proceed with the next iterations.
+Use "continue" keyword to skip the next iteration.
+
+3.Pass:
+------
+Pass statement is python is a null operation, which is used when the statement is required syntactically.
+Use "Pass" keyword to pass statement.
