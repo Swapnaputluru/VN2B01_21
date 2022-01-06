@@ -1,0 +1,51 @@
+'''
+unicode
+isdecimal
+'''
+
+name = "swapna"
+company = "VN2 SOLUTIONS"
+statement = "Returns the number of times a specified value occurs in a string"
+text = "h\te\tl\tl\to"
+print(name)
+print("First letter is capital letter:", name.capitalize())
+print("Convert string into lower case:", company.casefold())
+print("output come in center:", name.center(25))
+print("output come in center:", name.center(25,"-"))
+print("number of times 'i' letter occurs in string:", statement.count("i"))
+print("	Returns an encoded version of the string", company.encode())
+print("returns true or false depends on condition:", statement.endswith("string"))
+print("returns true or false depends on condition:", statement.endswith("string."))
+print(text)
+print("tab space:",text.expandtabs(15))
+print("tab space without giving no of spaces:",text.expandtabs())
+print("Find is used to given letter in place in which position:", name.find("n"))
+print("Find is used to given word in place in which position:", statement.find("occurs"))
+print("if given letter of word not in the variable it returns -1:", statement.find("hello"))
+print("My name is {}, from {},".format("swapna","tadpatri."))
+print("My name is {1}, from {0},".format("tadpatri.","swapna"))
+print("find the letter position by using index:", name.index("w"))
+print("true when string is alphanumaric:", "vn2solutions".isalnum())
+print("false when string is having any space or symbols:", "vn2 solutions".isalnum())
+print("true when string is alphabetic:", "vnsolutions".isalpha())
+print("false when string is having any number, space or symbols:", "vn2solutions".isalpha())
+print("returns true if the given string having digits:", "625476754876".isdigit())
+print("returns fasle if the given string having any alphabets,symbols:", "625476754876swa".isdigit())
+print("returns true if the given string having any alphabets,numbers and underscore:", "my_self12".isidentifier())
+print("returns false if the given string having any numbers at starting and spaces:", "12 myself".isidentifier())
+print("true when string is having lowercase letters:", "vn2 solutions".islower())
+print("false when string is having uppercase letters:", "VN2 solutions".islower())
+print("true when string is having uppercase letters:", "VN2 solutions".isupper())
+print("false when string is having lowercase letters:", "vn2 solutions".islower())
+print("numeric values i.e 0-9:","2464727".isnumeric())
+print("not numeric values i.e -1,0.5:","1.5".isnumeric())
+print("all characters have space-true:", "    ".isspace())
+print("all characters have any text-false:", "  no  ".isspace())
+print("start with upper case letters:", "Iam Swapna".istitle())
+print("if start with numbers and don't use symbols-false:", "1iam swapna".istitle())
+print("join 2 variables:", "*".join(name))
+print("deleted selected ones from string:", ".;'# swapna".lstrip(".;'"))
+print("replace:",name.translate(name.maketrans("w","a")))
+print("give specific space for string:", name.ljust(30))
+print("swap the lower and upper:", "SwaPna ReDdy".swapcase())
+print("fill space:", name.zfill(20))
