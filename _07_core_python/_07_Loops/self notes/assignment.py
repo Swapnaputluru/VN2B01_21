@@ -85,11 +85,24 @@ for i in str(num):
 print(product)
 
 
+print("find out given number is prime or not")
+num =int(input("enter the number:"))
+for i in range(2,num):
+    if num % i == 0:
+        break
+        print("not prime")
+    else:
+        print("prime")
 
 
+print("find out factorial of given number ")
+num =int(input("enter the number:"))
+num2 = 1
+for i in range(num,1,-1):
+    num2 = num2 * i
 
 
-
+print(num2)
 
 
 
