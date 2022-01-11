@@ -1,0 +1,66 @@
+List:
+-----
+Lists are used to store multiple items in a single variable. Lists are created using square brackets. 
+List items are ordered, changeable, and allow duplicate values.
+
+Negative Indexing:
+------------------
+Negative indexing means start from the end
+-1 refers to the last item, -2 refers to the second last item etc.
+
+Slicing:
+-------
+You can specify a range of indexes by specifying where to start and where to end the range.
+When specifying a range, the return value will be a new list with the specified items.
+
+Note: The search will start at index 2 (included) and end at index 5 (not included).
+* Remember that the first item has index 0.
+* By leaving out the start value, the range will start at the first item.
+* By leaving out the end value, the range will go on to the end of the list.
+
+Check if Item Exists:
+To determine if a specified item is present in a list use the in keyword.
+
+Add List Items:
+---------------
+Append----To add an item to the end of the list, use the append() method.
+Insert---To insert a list item at a specified index, use the insert() method.
+Extend----To append elements from another list to the current list, use the extend() method.
+
+Remove List Items:
+------------------
+Remove----The remove() method removes the specified item.When we know the value.
+Pop----The pop() method removes the specified index. If you do not specify the index, the pop() method removes the last item.
+Clear-----The clear() method empties the list. The list still remains, but it has no content
+
+Sort List Alphanumerically:
+List objects have a sort() method that will sort the list alphanumerically, ascending, by default.
+Sort Descending:
+To sort descending, use the keyword argument reverse = True.
+
+Copy a List:
+You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, 
+and changes made in list1 will automatically also be made in list2.
+There are ways to make a copy, one way is to use the built-in List method copy().
+
+Reverse----The reverse() method reverses the sorting order of the elements.
+Count----The count() method returns the number of elements with the specified value.
+Index----The index() method returns the position at the first occurrence of the specified value.
+
+
+
+
+
+Tuple:
+------
+Tuples are used to store multiple items in a single variable. A tuple is a collection which is ordered and unchangeable.
+
+Ordered:
+When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+
+Unchangeable:
+Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+
+Allow Duplicates:
+Since tuples are indexed, they can have items with the same value.
+
