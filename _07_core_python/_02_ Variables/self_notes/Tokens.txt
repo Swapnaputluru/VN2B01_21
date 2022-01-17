@@ -1,4 +1,4 @@
-Token:
+ Token:
 	A token is the smallest individual unit in a python program. 
 All statements and instructions in a program are built with tokens. 
 The various tokens in python are :
@@ -19,7 +19,6 @@ assert, while, for, in, raise, except, or, not, if, elif, print, import, etc
 Python is a case-sensitive language and it has some rules and regulations to name an identifier.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 3.Literals:
-	Literals are the fixed values or data items used in a source code. 
 Python supports different types of literals such as Integer,float,bollean,String.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 4. Operators: 

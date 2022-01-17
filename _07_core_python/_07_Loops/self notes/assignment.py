@@ -3,13 +3,13 @@
 # print numbers in serial wise
 i = 1
 for i in range(1, 6):
-    for j in range(1,i+1):
+    for j in range(1, i+1):
         print(j, end="")
     print()
 
 # print numbers in reverse order
-for i in range(5,0,-1):
-    for j in range(0,i):
+for i in range(5, 0, -1):
+    for j in range(0, i):
         print(i, end="")
     print()
 
@@ -23,8 +23,8 @@ for i in range(1,6):
 
 
 a = 65
-for i in range(6,1, -1):
-    for j in range( i - 1):
+for i in range(6, 1, -1):
+    for j in range(i - 1):
         print(chr(a), end="")
         a = a + 1
     print()
@@ -61,10 +61,8 @@ for i in range(100, 500):
         print(i)
 
 print("find even and odd numbers between 12 and 37 including 12 and 37")
-a = 12
 for i in range(12, 38):
     if i % 2 == 0:
-        a = a + i
         print("Even number:", i)
     else:
         print("odd number:", i)
@@ -96,9 +94,9 @@ for i in range(2,num):
 
 
 print("find out factorial of given number ")
-num =int(input("enter the number:"))
+num = int(input("enter the number:"))
 num2 = 1
-for i in range(num,1,-1):
+for i in range(num, 1, -1):
     num2 = num2 * i
 
 

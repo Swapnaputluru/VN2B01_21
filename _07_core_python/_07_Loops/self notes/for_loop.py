@@ -43,10 +43,9 @@ for i in list1:
 # Break control statement
 i = "Break control statement"
 for j in i:
+    print(j)
     j == c
     break
-print(j)
-
 
 
 
