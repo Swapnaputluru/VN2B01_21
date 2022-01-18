@@ -101,8 +101,7 @@ for i in range(num, 1, -1):
 
 
 print(num2)
-
-
+print()
 
 
 
