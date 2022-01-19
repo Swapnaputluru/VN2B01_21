@@ -1,0 +1,45 @@
+What is OOPs?
+  OOPs stand for Object Oriented Programming system.A real-world idea can be demonstrated, as everything in OOP is treated as an object
+
+What are the basic concepts of OOPs?
+1.Inheritance
+2.Encapsulation
+3.Polymorphism
+4.Abstraction
+
+What is an object?
+Object: An object is an instance of a class and also It has its own identity and behaviour.
+
+What is Method?
+It basically goes for describing the set of instructions and it is also called a function.
+
+What is a class?
+Class is a kind of a user-defined data type that contains variables, properties, and methods.  
+It also helps to find the properties of an object
+
+What is inheritance?
+It is defined as properties of parent class inherited (used) by the child class.
+It represents real-world relationships well.
+It provides reusability of a code. We don’t have to write the same code again and again.
+
+What is Polymarphim?
+Polymorphism is the ability of an object to take on many forms. 
+The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+
+What is Encapsulation?
+
+Encapsulation in Python is the process of wrapping up variables and methods into a single entity.
+Encapsulation is used to hide the values or state of a structured data object inside a class.
+
+What is Data abstraction?
+Data abstraction refers to providing only essential information about the data to the outside world.
+
+
+
+
+
+
+
+
+

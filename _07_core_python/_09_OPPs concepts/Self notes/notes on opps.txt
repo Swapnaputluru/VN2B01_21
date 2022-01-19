@@ -1,0 +1,62 @@
+Class:
+------
+A class is a collection of objects. A class contains the blueprints or the prototype from which the objects are being created. 
+It is a logical entity that contains some attributes and methods.
+
+Some points on Python class: 
+
+*Classes are created by keyword class.
+*Attributes are the variables that belong to a class.
+*Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute
+
+
+
+Objects:
+---------
+The object is an entity that has a state and behavior associated with it.
+ex:int,string, list etc. All are Objects.
+
+An object consists of :
+
+State: It is represented by the attributes of an object. It also reflects the properties of an object.
+Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.
+Identity: It gives a unique name to an object and enables one object to interact with other objects.
+
+
+The __init__() Function
+* All classes have a function called __init__(), which is always executed when the class is being initiated.
+* Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created.
+
+Self:
+* The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.
+* The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+* It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class.
+
+
+
+Inheritance:
+------------
+It is defined as properties of parent class inherited (used) by the child class.
+It represents real-world relationships well.
+It provides reusability of a code. We don’t have to write the same code again and again.
+Also, it allows us to add more features to a class without modifying it.
+
+
+Polymorphism:
+------------- 
+The word polymorphism means having many forms. 
+In programming, polymorphism means the same function name (but different signatures) being used for different types.
+Polymorphism is the ability of an object to take on many forms. 
+The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+
+Encapsulation:
+--------------
+Encapsulation in Python is the process of wrapping up variables and methods into a single entity.
+Encapsulation is used to hide the values or state of a structured data object inside a class.
+Encapsulation ensures data protection and avoids the access of data accidentally.
+
+
+Data abstraction:
+----------------
+Data abstraction refers to providing only essential information about the data to the outside world
