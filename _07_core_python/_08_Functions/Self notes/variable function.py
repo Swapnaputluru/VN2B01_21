@@ -42,7 +42,7 @@ addition = list(map(lambda a:a+3, divisable_by_5))
 add = reduce(lambda a,b:a+b,divisable_by_5 )
 print(divisable_by_5)
 print(addition)
-print(add)
+rint(add)
 
 
 
@@ -55,5 +55,4 @@ def cube(a):
 lambda_cube = lambda a:a*a*a
 cube(3)
 print(lambda_cube(2))
-
 

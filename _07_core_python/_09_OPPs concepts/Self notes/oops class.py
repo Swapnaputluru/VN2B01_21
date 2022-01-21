@@ -19,7 +19,7 @@ class Multiply:
 
 
 number = Multiply(10,10)
-Multiply.number
+
 
 
 print("-----------with using init function and method--------------")
@@ -58,3 +58,63 @@ class Addition:
 n1 = Addition(12, 2)
 Addition.add(n1)
 
+class age:
+    def __init__(self, age):
+        self.age = age
+
+    def select(self):
+        if self.age <18:
+            print("not eligible for vote and pension")
+        elif 18 <= self.age <60:
+            print("eligible for vote only not for pension")
+        else:
+            print("eligible for vote and pension")
+
+
+a1 = age(int(input("Enter age:")))
+a1.select()
+
+
+
+
+
+
+
+'''
+
+class Number:
+ pass
+
+n1 = Number()
+print(n1)
+
+
+class age:
+    def __init__(self, list):
+        self.list = list
+
+    def select(self,list):
+        for i in list:
+            print("Okay")
+
+
+
+a1 = list([1,2,4,6,77,45])
+
+
+'''
+
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+    def fare(self):
+        return self.capacity
+
+class Bus(Vehicle):
+    print("This is bus")
+
+School_bus = Bus("School Volvo", 12, 50)
+print("Total Bus fare is:", School_bus.fare())
