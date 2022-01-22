@@ -116,5 +116,40 @@ class Vehicle:
 class Bus(Vehicle):
     print("This is bus")
 
+
 School_bus = Bus("School Volvo", 12, 50)
 print("Total Bus fare is:", School_bus.fare())
+
+
+class A():
+    def name(self):
+        print("swapna")
+
+class B(A):
+    def name2(self):
+        print("manu")
+
+class C(B):
+    def name3(self):
+        print("hanu")
+
+a = A()
+a.name()
+b = B()
+b.name2()
+c = C()
+c.name3()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

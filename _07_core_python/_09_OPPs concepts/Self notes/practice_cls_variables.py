@@ -26,13 +26,13 @@ print("Pursuing year is:", y1)
 s1.Year(y1)
 
 
-s1 = StudentDetails("Tommy", 1426, "EEE", 2, "KSRM")
-s1.display()
-y1 =s1.year
-print("Pursuing year is:", y1)
-s1.Year(y1)
+s2 = StudentDetails("Tommy", 1426, "EEE", 2, "KSRM")
+s2.display()
+y2 =s2.year
+print("Pursuing year is:", y2)
+s2.Year(y2)
 
-print("Without class variables")
+print("With class variables")
 
 
 class BankDetails:
