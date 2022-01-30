@@ -15,10 +15,5 @@ def word(sentence):
         print(count)
 
 
-
-
-
-
-
 word("hgduyf hfhd hhf")
 

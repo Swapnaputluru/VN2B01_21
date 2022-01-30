@@ -17,7 +17,6 @@ a1.eligability(32)
 a1.eligability(62)
 
 
-
 def adding(a, b):
     add = a + b
     print(add)
@@ -26,9 +25,10 @@ def adding(a, b, c):
     add = a + b + c
     print(add)
 
-
+adding(1,2) # TypeError: adding() missing 1 required positional argument: 'c'
 adding(1, 2, 3)
 
+from multipledispatch import dispatch
 
 @dispatch(int, int)
 def adding(a, b):

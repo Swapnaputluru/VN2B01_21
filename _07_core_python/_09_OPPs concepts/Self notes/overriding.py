@@ -1,6 +1,6 @@
 class College:
     def ksrm(self):
-       pass
+        print("location is kadapa")
 
 class College1(College):
     def ksrm(self):

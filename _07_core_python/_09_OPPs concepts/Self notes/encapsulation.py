@@ -33,13 +33,14 @@ h1.proffessional()
 # indirectly change the private variable value
 
 class variable:
-    number = 23
+    __number = 23
     def num(self,numb):
-        self.number = numb
+        self.__number = numb
         print(numb)
 
     def value(self):
-        print(self.number)
+        print(self.__number)
+
 
 print("----------------given private variable value------------------")
 obj = variable()
@@ -47,4 +48,26 @@ obj.value()
 print("----------------after changing value------------------")
 obj.num(21)
 obj.value()
+
+# Protected
+class vote:
+    def _hide(self):
+        print("hide details")
+
+class Hiding(vote):
+    def show(self):
+        print("No need to hide")
+
+
+h1 = vote()
+h1._hide()
+
+h2 = Hiding()
+h2.show()
+h2._hide()
+
+
+
+
+
 
