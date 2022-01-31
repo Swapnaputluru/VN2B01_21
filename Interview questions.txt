@@ -1,0 +1,413 @@
+Q.List vs Sets in pyrthon?
+        Lists	                                             Sets
+Lists are Ordered.	                            Sets are Unordered.
+Lists are Mutable.	                            Sets are mutable but only stored immutable elements.
+Elements can be changed or replaced in Lists.	    Elements cannot be changed or replaced.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Memory Management in python?
+	Understanding Memory allocation is important to any software developer as writing efficient code means writing a memory-efficient code. 
+Memory allocation can be defined as allocating a block of space in the computer memory to a program. In Python memory allocation and 
+deallocation method is automatic as the Python developers created a garbage collector for Python so that the user does not have to do manual garbage collection.
+Memory management in Python involves a private heap containing all Python objects and data structures.at the lowest level, a raw memory allocator ensures that there is enough room in the private heap for storing all Python-related data by interacting with the memory manager of the operating system.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Pickling and unpickling in python?
+Pickling:
+In Python, pickling is the process by which Python objects are converted to byte streams. Pickling is about serializing the object structure in python.
+Unpickling:
+Unpickling is the process of retrieving original python objects from the stored string representation i.e from the pickle file. 
+It is the process of converting a byte stream into the python object.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Method overloading in python?
+Methods in Python can be called with zero, one, or more parameters. This process of calling the same method in different ways is called method overloading. ... 
+Two methods cannot have the same name in Python. 
+hence method overloading is a feature that allows the same operator to have different meanings.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Class methods and instance methods?
+Instance Methods:
+The first method on MyClass, called method, is a regular instance method. That’s the basic, no-frills method type you’ll use most of the time. You can see the method takes one parameter, self, which points to an instance of MyClass when the method is called (but of course instance methods can accept more than just one parameter).
+Through the self parameter, instance methods can freely access attributes and other methods on the same object. This gives them a lot of power when it comes to modifying an object’s state.
+Not only can they modify object state, instance methods can also access the class itself through the self.__class__ attribute. This means instance methods can also modify class state.
+Class Methods:
+Let’s compare that to the second method, MyClass.classmethod. I marked this method with a @classmethod decorator to flag it as a class method.
+Instead of accepting a self parameter, class methods take a cls parameter that points to the class—and not the object instance—when the method is called.
+Because the class method only has access to this cls argument, it can’t modify object instance state. That would require access to self. However, class methods can still modify class state that applies across all instances of the class.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Instance variables can access class variables?
+A Python class variable is shared by all object instances of a class. Class variables are declared when a class is being constructed. They are not defined inside any methods of a class.
+Because a class variable is shared by instances of a class, the Python class owns the variable. As a result, all instances of the class will be able to access that variable. Class variables are shared by all instances that access the class.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Append and extend in python?
+Append:
+append():Adds its argument as a single element to the end of a list. The length of the list increases by one.
+list.append(1)
+Extend:
+extend(): Iterates over its argument and adding each element to the list and extending the list. 
+The length of the list increases by number of elements in it’s argument.
+list.extend(1,2,3)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Decorators in python?
+Decorators are a very powerful and useful tool in Python since it allows programmers to modify the behaviour of function or class. 
+Decorators allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
+Python has an interesting feature called decorators to add functionality to an existing code.
+This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Call by refrence and call by value in python?
+While calling a function, we pass values of variables to it. Such functions are known as “Call By Values”.
+While calling a function, instead of passing the values of variables, we pass address of variables(location of variables) to the function known as “Call By References.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Shallow copy and Deep copy
+Shallow Copy:
+A shallow copy is a copy of an object that stores the reference of the original elements. 
+It creates the new collection object and then occupying it with reference to the child objects found in the original.
+It makes copies of the nested objects' reference and doesn't create a copy of the nested objects. 
+So if we make any changes to the copy of the object will reflect in the original object. We will use the copy() function to implement it.
+Deep Copy:
+A deep copy is a process where we create a new object and add copy elements recursively. We will use the deecopy() method which present in copy module. 
+The independent copy is created of original object and its entire object
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Circular Import in python?
+Circular Dependecy:
+When two or more modules rely on each other, this is referred to as a circular dependency. 
+This is due to the fact that each module is defined in terms of the others.
+Circular Import:
+Circular importing is a form of circular dependency that is created with the import statement in Python.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Avoid circular import in python?
+Just change your test file to another name such as aaa.py , other than request.py . Do not use names that are already used by other libs. This works because you can import file b without Python executing any of the import statements in file b , and thus you elude any circular imports.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Generator and Iterator in python?
+Iterator:
+An iterator is an object which contains a countable number of values and it is used to iterate over iterable objects like list, tuples, sets, etc. 
+Iterators are implemented using a class and a local variable for iterating is not required here, It follows lazy evaluation 
+where the evaluation of the expression will be on hold and stored in the memory until the item is called specifically 
+which helps us to avoid repeated evaluation. As lazy evaluation is implemented, it requires only 1 memory location to process the value and 
+when we are using a large dataset then, wastage of RAM space will be reduced the need to load the entire dataset at the same time will not be there.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Using an iterator:
+iter() keyword is used to create an iterator containing an iterable object.
+next() keyword is used to call the next element in the iterable object.
+After the iterable object is completed, to use them again reassign them to the same object.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Generators:
+It is another way of creating iterators in a simple way where it uses the keyword “yield” instead of returning it in a defined function. 
+Generators are implemented using a function. Just as iterators, generators also follow lazy evaluation. 
+Here, the yield function returns the data without affecting or exiting the function. 
+It will return a sequence of data in an iterable format where we need to iterate over the sequence to use the data as they won’t store the entire 
+sequence in the memory.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q._init.py_ uses in python?
+The __init__.py file makes Python treat directories containing it as modules.
+Furthermore, this is the first file to be loaded in a module, so you can use it to execute code that you want to run each time a module is loaded, or specify the submodules to be exported.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Method resolution order in python?
+Method Resolution Order :
+Method Resolution Order(MRO) it denotes the way a programming language resolves a method or attribute. Python supports classes inheriting from other classes. 
+The class being inherited is called the Parent or Superclass, while the class that inherits is called the Child or Subclass. 
+In python, method resolution order defines the order in which the base classes are searched when executing a method. 
+First, the method or attribute is searched within a class and then it follows the order we specified while inheriting. 
+This order is also called Linearization of a class and set of rules are called MRO(Method Resolution Order). While inheriting from another class, 
+the interpreter needs a way to resolve the methods that are being called via an instance. Thus we need the method resolution order.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.how import works in python?
+When a module is imported, Python runs all of the code in the module file. When a package is imported, Python runs all of the code in the package’s __init__.py file, if such a file exists. All of the objects defined in the module or the package’s __init__.py file are made available to the importer.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Django vs Flask in python?
+                 Django                                                                                                    Flask
+1.Django could be a Python-based free, open source system which takes after 	1.Flask could be a Python-based smaller scale system without any set of specific the MVT(model view Template) approach of structural design                            instruments or outside libraries. It too doesn’t have a database layer or                                                                                               arrangements for shape approval and makes utilize of expansions.
+ 
+2.Doesn’t exclude setting flexibility	                                        2.It is accepted that all the conceivable stages to organize a Flask code rises to the 
+                                                                                  applications number show in flask as of now
+                                
+3.Extend Layout is Conventional extend structure                                3.Extend Layout is Arbitrary structure
+
+
+4.Django gives an all-inclusive encounter: you get an admin board,              4.Flask gives straightforwardness, adaptability and fine-grained control. It is 
+database interfacing, an ORM, and registry structure for your apps                unopinionated
+and ventures out of the box.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Middleware in python?
+In a nutshell, a Middleware is a regular Python class that hooks into Django’s request/response life cycle. Those classes holds pieces of code that are processed upon every request/response your Django application handles.
+
+The Middleware classes doesn’t have to subclass anything and it can live anywhere in your Python path. The only thing Django cares about is the path you register in the project settings MIDDLEWARE_CLASSES.
+
+Your Middleware class should define at least one of the following methods:
+
+Called during request:
+process_request(request)
+process_view(request, view_func, view_args, view_kwargs)
+Called during response:
+process_exception(request, exception) (only if the view raised an exception)
+process_template_response(request, response) (only for template responses)
+process_response(request, response)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Signals in Django in python?
+Signals:
+Django includes a “signal dispatcher” which helps decoupled applications get notified when actions occur elsewhere in the framework. In a nutshell, signals allow certain senders to notify a set of receivers that some action has taken place. They’re especially useful when many pieces of code may be interested in the same events
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.gunicorn in mongodb in python?
+I have a django application using mongoengine running on gunicorn with gevent workers. Under load, mongo connection count climbs up to about 3 thousand and never goes back down. Even after the load test is completed, the number of mongo connections stays constant. A restart of gunicorn releases the connections.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Mongodb wth django
+Djongo is a SQL to mongodb query transpiler. Using djongo we can use MongoDB as a backend database for our Django project. We don’t even need to change the Django ORM. The best part is that we can setup Django with MongoDB by adding just one line of code. There is no need to change serializers, views, or any other modules.
+Official Docs – https://pypi.org/project/djongo/ 
+Working – 
+Djongo translates a SQL query string into a MongoDB query document. Therefore, there is no need to change models, serializers, views or any Django features. Djongo supports all django contrib libraries which make it an easy to use connector. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.make migrations in python?
+Migrations:
+Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. They’re designed to be mostly automatic, but you’ll need to know when to make migrations, when to run them, and the common problems you might run into.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.migrate
+Data Migrations Defined
+Data migrations are used in a number of scenarios. Two very popular ones are:
+When you would like to load “system data” that your application depends upon being present to operate successfully.
+When a change to a data model forces the need to change the existing data.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.allowed_host in settings.py
+By default, the ALLOWED_HOSTS variable in settings.py is empty. The purpose of ALLOWED_HOSTS is to validate a request's HTTP Host header. Validation is done to prevent rogue users from sending fake HTTP Host headers that can potentially poison caches and password reset emails with links to malicious hosts. Since this issue can only present itself under an uncontrolled user environment (i.e. public/production servers), this validation is only done when DEBUG=False.
+If you switch to DEBUG=False and ALLOWED_HOSTS is left empty, Django refuses to serve requests and instead responds with HTTP 400 bad request pages, since it can't validate incoming HTTP Host headers. Listing 5-1 illustrates a sample definition of ALLOWED_HOSTS.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.authentication in flask and django
+I have a Django app and Flask app running in parallel on a server. Both are hosted behind the same domain, but behind different paths, so they should be able to see each other's cookies.
+I'm using Flask to run a simple API microservice, where using Django would be overkill. However, to prevent abuse, I still want Flask to check the request's cookies to see if they're from a user who's still authenticated in the Django application. I don't want to re-implement an authentication framework in Flask.
+Access Django settings from inside Flask is relatively simple. I just put something like this at the top of my Flask script to set the path to my Django settings module:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------Q.OOPs concepts?
+
+  OOPs stand for Object Oriented Programming system.A real-world idea can be demonstrated, as everything in OOP is treated as an object
+
+What are the basic concepts of OOPs?
+1.Inheritance
+2.Encapsulation
+3.Polymorphism
+4.Abstraction
+
+What is inheritance?
+It is defined as properties of parent class inherited (used) by the child class.
+It represents real-world relationships well.
+It provides reusability of a code. We don’t have to write the same code again and again.
+
+What is Polymarphim?
+Polymorphism is the ability of an object to take on many forms. 
+The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+What is Encapsulation?
+Encapsulation in Python is the process of wrapping up variables and methods into a single entity.
+Encapsulation is used to hide the values or state of a structured data object inside a class.
+It restricts access to methods and variables.Prevent data from being modified by accident.
+
+What is Data abstraction?
+Data abstraction refers to providing only essential information about the data to the outside world.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.list vs tuple in python?
+            LIST	                                                                      TUPLE
+1 Lists are mutable	                                                               Tuples are immutable
+2 Implication of iterations is Time-consuming	                                       The implication of iterations is comparatively Faster
+3 The list is better for performing operations, such as insertion and deletion.	       Tuple data type is appropriate for accessing the elements
+4 Lists consume more memory	                                                       Tuple consume less memory as compared to the list
+5 Lists have several built-in methods	                                               Tuple does not have many built-in methods.
+6 The unexpected changes and errors are more likely to occur	                       In tuple, it is hard to take place.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q. blueprint in flask?
+A blueprint defines a collection of views, templates, static files and other elements that can be applied to an application. For example, let’s imagine that we have a blueprint for an admin panel. This blueprint would define the views for routes like /admin/login and /admin/dashboard. It may also include the templates and static files that will be served on those routes. We can then use this blueprint to add an admin panel to our app, be it a social network for astronauts or a CRM for rocket salesmen.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.sqlAlchemy
+SQLAlchemy is a popular SQL toolkit and Object Relational Mapper. It is written in Python and gives full power and flexibility of SQL to an application developer. It is an open source and cross-platform software released under MIT license. SQLAlchemy is famous for its object-relational mapper (ORM), using which classes can be mapped to the database, thereby allowing the object model and database schema to develop in a cleanly decoupled way from the beginning
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Decorators in python?
+Decorators are a very powerful and useful tool in Python since it allows programmers to modify the behaviour of function or class. Decorators allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it. But before diving deep into decorators let us understand some concepts that will come in handy in learning the decorators.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Jinja2 Template 
+Python Jinja module
+Jinja is a template engine for Python. It is similar to the Django template engine.
+A template engine or template processor is a library designed to combine templates with a data model to produce documents. Template engines are often used to generate large amounts of emails, in source code preprocessing, or producing dynamic HTML pages.
+We create a template engine, where we define static parts and dynamic parts. The dynamic parts are later replaced with data. The rendering function later combines the templates with data.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.architechture of Django
+In the previous article, we learned the unique features of Django. Now, we will discuss about Django architecture based on MVC pattern. We will be understanding the MVC pattern in more detail. Django MVC architecture solves lots of problems which were there in the traditional approach for web development.
+We will understand the components of the MVC pattern that are Model, Views, and Controller.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.sessions in Django
+As discussed earlier, we can use client side cookies to store a lot of useful data for the web app. We have seen before that we can use client side cookies to store various data useful for our web app. This leads to lot of security holes depending on the importance of the data you want to save.
+For security reasons, Django has a session framework for cookies handling. Sessions are used to abstract the receiving and sending of cookies, data is saved on server side (like in database), and the client side cookie just has a session ID for identification. Sessions are also useful to avoid cases where the user browser is set to ‘not accept’ cookies.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.diff between union and union all in SQL Query?
+1. Union :
+Union means joining two or more data sets into a single set. In SQL Server, Union is used to combine two queries into a single result set using the select statements. Union extracts all the rows that are described in the query.
+Syntax –query1 UNION query2
+Union holds a few conditions before being used in a query. One such condition is that the rows to be extracted must come from the same columns from the tables.
+Two different tables are being used here for extraction of rows yet the column specified for extraction is the same for both. An error occurs if different columns are being used. The data type specified also must be the same for both the queries.
+2. Union All :
+A union is used for extracting rows using the conditions specified in the query while Union All is used for extracting all the rows from a set of two tables.
+Syntax –query1 UNION ALL query2
+The same conditions are applicable to Union All. The only difference between Union and Union All is that Union extracts the rows that are being specified in the query while Union All extracts all the rows including the duplicates (repeated values) from both the queries.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.what is NoSQL Database?
+When people use the term “NoSQL database,” they typically use it to refer to any non-relational database. Some say the term “NoSQL” stands for “non SQL” while others say it stands for “not only SQL.” Either way, most agree that NoSQL databases are databases that store data in a format other than relational tables
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q..what is Allowed_Hosts in  Django
+A list of strings representing the host/domain names that this Django site can serve. This is a security measure to prevent HTTP Host header attacks, which are possible even under many seemingly-safe web server configurations.
+
+Values in this list can be fully qualified names (e.g. 'www.example.com'), in which case they will be matched against the request’s Host header exactly (case-insensitive, not including port). A value beginning with a period can be used as a subdomain wildcard: '.example.com' will match example.com, www.example.com, and any other subdomain of example.com. A value of '*' will match anything; in this case you are responsible to provide your own validation of the Host header (perhaps in a middleware; if so this middleware must be listed first in MIDDLEWARE).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Diff Between  migrate and make migrations?
+migrate, which is responsible for applying migrations, as well as unapplying and listing their status.
+makemigrations, which is responsible for creating new migrations based on the changes you have made to your models.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.why django is a full stack Web framework?
+Django was first released back in 2005 when front-ends were relatively straightforward. There were no dedicated JavaScript front-end frameworks like React, Angular, Vue, Ember, and the rest.
+As a result Django comes with an intentionally basic Templating Language that can perform basic logic such as loops and filters. And to its credit, Django has resisted the temptation to add complexity here; the Django Templating Language still remains very bare-boned in functionality.
+Most Django developers therefore fall into the back-end camp of the full-stack spectrum. They control the database and logic of a site and often, in companies, rely on a separate front-end developer to customize the presentation in a Django template
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------Q.How to Create a basic API using Django Rest Framework ?
+Django REST Framework is a wrapper over default Django Framework, basically used to create APIs of various kinds. There are three stages before creating a API through REST framework, Converting a Model’s data to JSON/XML format (Serialization), Rendering this data to the view, Creating a URL for mapping to the viewset.
+This article revolves around how to create a basic API using Django REST Framework. It assumes you are familiar with Django basics – Django tutorial. Also, installation of Django REST Framework. Assuming you have created a project named geeksforgeeks with Django, let’s initiate Django REST Framework.
+ 
+Steps
+1.Add rest_framework to INSTALLED_APPS
+2.Create a app and model
+3.Serialization
+4.Creating a viewset
+5.Define URLs of API
+6.Run server and check API
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Flask and Databases
+To add database functionality to a Flask app, we will use SQLAlchemy.
+SQLAlchemy is a Python SQL toolkit and object relational mapper (ORM) that enables Python to communicate with the SQL database system you prefer: MySQL, PostgreSQL, SQLite, and others. An ORM converts data between incompatible systems (object structure in Python, table structure in SQL database). SQLAlchemy is basically a bridge between Python and a SQL database.
+Flask-SQLAlchemy is an extension for Flask that adds SQLAlchemy to your Flask app.
+SQLAlchemy documentation
+Flask-SQLAlchemy documentation
+Code for this chapter
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Connect Flask to a Database with Flask-SQLAlchemy
+Flask is a micro web framework written in python. Micro-framework is normally a framework with little to no dependencies on external libraries. Though being a micro framework almost everything can be implemented using python libraries and other dependencies when and as required.
+In this article, we will be building a Flask application that takes data in a form from the user and then displays it on another page on the website. We can also delete the data. We won’t focus on the front-end part rather we will be just coding the backend for the web application
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Token-Based Authentication With Flask
+Introduction
+JSON Web Tokens (or JWTs) provide a means of transmitting information from the client to the server in a stateless, secure way.
+On the server, JWTs are generated by signing user information via a secret key, which are then securely stored on the client. This form of auth works well with modern, single page applications. For more on this, along with the pros and cons of using JWTs vs. session and cookie-based auth, 
+Keep in mind that since a JWT is signed rather than encrypted it should never contain sensitive information like a user’s password.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.The difference between get and filter methods in Django?
+get(**kwargs)
+Returns the object matching the given lookup parameters, which should be in the format described in Field lookups.
+ 
+get() raises Multiple Objects Returned if more than one object was found. The Multiple
+Objects Returned exception is an attribute of the model class.
+ 
+get() raises a DoesNotExist exception if an object wasn't found for the given parameters. This exception is also an attribute of the model class.
+filter(**kwargs)
+Returns a new QuerySet containing objects that match the given lookup parameters.
+Basically use get() when you want to get a single unique object, and filter() when you want to get all objects that match your lookup parameters.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.User authentication in Django ?
+Django comes with a user authentication system. It handles user accounts, groups, permissions and cookie-based user sessions. This document explains how things work.
+Overview
+1.The auth system consists of:
+2.Users
+3.Permissions: Binary (yes/no) flags designating whether a user may perform a certain task.
+4.Groups: A generic way of applying labels and permissions to more than one user.
+5.Messages: A simple way to queue messages for given users.
+6.Deprecated in Django 1.2:
+7.Deprecated since version 1.2: The Messages component of the auth system will be removed in Django 1.4.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Authentication and Authorization?
+Authentication is the mechanism whereby systems may securely identify their users. Eve supports several authentication schemes: Basic Authentication, Token Authentication, HMAC Authentication. OAuth2 integration is easily accomplished.
+Authorization is the mechanism by which a system determines what level of access a particular (authenticated) user should have access to resources controlled by the system. In Eve, you can restrict access to all API endpoints, or only some of them. You can protect some HTTP verbs while leaving others open. For example, you can allow public read-only access while leaving item creation and edition restricted to authorized users only. You can also allow GET access for certain requests and POST access for others by checking the method parameter. There is also support for role-based access control.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.User authentication in Django
+Django comes with a user authentication system. It handles user accounts, groups, permissions and cookie-based user sessions. This section of the documentation explains how the default implementation works out of the box, as well as how to extend and customize it to suit your project’s needs.
+Overview
+The Django authentication system handles both authentication and authorization. Briefly, authentication verifies a user is who they claim to be, and authorization determines what an authenticated user is allowed to do. Here the term authentication is used to refer to both tasks.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Serializers – Django REST Framework
+Serializers in Django REST Framework are responsible for converting objects into data types understandable by javascript and front-end frameworks. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data. The serializers in REST framework work very similarly to Django’s Form and ModelForm classes. The two major serializers that are most popularly used are ModelSerializer and HyperLinkedModelSerialzer.
+This article revolves around how to use serializers from scratch in Django REST Framework to advanced serializer fields and arguments. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.How to Create and Use Signals in Django ?
+Signals are used to perform any action on modification of a model instance. The signals are utilities that help us to connect events with actions. We can develop a function that will run when a signal calls it. In other words, Signals are used to perform some action on modification/creation of a particular entry in Database. For example, One would want to create a profile instance, as soon as a new user instance is created in Database
+There are 3 types of signal.
+1.pre_save/post_save: This signal  works before/after the method save().
+2.pre_delete/post_delete: This signal  works before after delete a model’s instance (method delete()) this signal is thrown.
+3.pre_init/post_init: This signal is thrown before/after instantiating a model (__init__() method).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.How-to Use Custom View @decorators in Django?
+ Decorators are a way to restrict access to views based on the request method or control caching behaviour. This is particularly useful when you want to separate logged-in users from unauthenticated users or create an admin page that only privileged users can access.
+Django has several built-in decorators, but their main issue is that they do not provide user feedback. Django also has a built-in messages framework that uses the SESSION_COOKIE to store messages and display them after submitting or reloading webpages as a means of user feedback. We’re going to incorporate this in our custom decorators. We’re also going to use Google’s RECAPTCHA to protect our form submissions from spam and abuse and include this in a decorator.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Acid in Django?
+What are the ACID properties of a transaction?
+In the context of transaction processing, the acronym ACID refers to the four key properties of a transaction: atomicity, consistency, isolation, and durability. All changes to data are performed as if they are a single operation. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.ACID properties of transactions
+In the context of transaction processing, the acronym ACID refers to the four key properties of a transaction: atomicity, consistency, isolation, and durability.
+Atomicity
+All changes to data are performed as if they are a single operation. That is, all the changes are performed, or none of them are.
+For example, in an application that transfers funds from one account to another, the atomicity property ensures that, if a debit is made successfully from one account, the corresponding credit is made to the other account.
+Consistency
+Data is in a consistent state when a transaction starts and when it ends.
+For example, in an application that transfers funds from one account to another, the consistency property ensures that the total value of funds in both the accounts is the same at the start and end of each transaction.
+Isolation
+The intermediate state of a transaction is invisible to other transactions. As a result, transactions that run concurrently appear to be serialized.
+For example, in an application that transfers funds from one account to another, the isolation property ensures that another transaction sees the transferred funds in one account or the other, but not in both, nor in neither.
+Durability
+After a transaction successfully completes, changes to data persist and are not undone, even in the event of a system failure.
+For example, in an application that transfers funds from one account to another, the durability property ensures that the changes made to each account will not be reversed.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Apache Kafka | Introduction
+
+Apache Kafka is a publish-subscribe messaging system. A messaging system let you send messages between processes, applications, and servers. Broadly Speaking, Apache Kafka is a software where topics (A topic might be a category) can be defined and further processed. Applications may connect to this system and transfer a message onto the topic. A message can include any kind of information ,from any event on your Personal blog or can be a very simple text message that would trigger any other event.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Micro services in flask
+Flask is a lightweight ‘web application framework’ written in Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. Flask doesn't enforce any dependencies or project layout. It is up to the developer to choose the tools and libraries they want to work with. Flask is super useful for building Microservices. You can utilize any number of its built-in extensions to design and deploy Microservices at high velocity. It will help you to get your offerings to market fast.
+deployemnt in projects
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.What Is Deployment Planning?
+In general, deployment refers to moving an object to a place where some action can be performed on it. In the case of software development, deployment means making an application ready for delivery.
+ First, the project manager creates a deployment plan. After that, the project team reviews it, before deployment.
+Here’s the basic structure I prefer in deployment planning.
+⦁Preliminaries + briefing + reserving resources
+⦁Check point, Go/NoGo
+⦁Timespan from 5 to 1 days before deployment
+⦁Check point, Go/NoGo
+⦁Cut over
+⦁Check point, Go/NoGo
+⦁Production test/authentication
+⦁Check point, Go/NoGo
+⦁First day in production use
+⦁Check point
+⦁Second day in production use
+⦁Check point
+The plan will include hundreds of activities for dozens of people, so communication and clear task list on what to do and when, are critical.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Max salary of each department in sql?
+SQL Query to Find the Highest Salary of Each Department
+Structured Query Language or SQL is a standard Database language that is used to create, maintain and retrieve the data from relational databases like MySQL, Oracle, etc. In this article, we will be using the Microsoft SQL Server.
+Here we are going to see how to get the highest salary of each department. Here, we will first create a database named “geeks” then we will create a table “department” in that database. After, that we will execute our query on that table.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Indexing in sql
+Indexes are used to speed-up query process in SQL Server, resulting in high performance. They are similar to textbook indexes. In textbooks, if you need to go to a particular chapter, you go to the index, find the page number of the chapter and go directly to that page. Without indexes, the process of finding your desired chapter would have been very slow.
+The same applies to indexes in databases. Without indexes, a DBMS has to go through all the records in the table in order to retrieve the desired results. This process is called table-scanning and is extremely slow. On the other hand, if you create indexes, the database goes to that index first and then retrieves the corresponding table records directly.
+There are two types of Indexes in SQL Server:
+⦁Clustered Index
+⦁Non-Clustered Index
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Template in djagno dashboard
+The Django template language is Django’s own template system. Until Django 1.8 it was the only built-in option available. It’s a good template library even though it’s fairly opinionated and sports a few idiosyncrasies. If you don’t have a pressing reason to choose another backend, you should use the DTL, especially if you’re writing a pluggable application and you intend to distribute templates. Django’s contrib apps that include templates, like django.contrib.admin, use the DTL.
+For historical reasons, both the generic support for template engines and the implementation of the Django template language live in the django.template namespace.
+
+
+
+
+
+
+
+
+
+
+
+
+	
