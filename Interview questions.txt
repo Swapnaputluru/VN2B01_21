@@ -1,5 +1,5 @@
 Q.List vs Sets in pyrthon?
-        Lists	                                             Sets
+         Lists	                                             Sets
 Lists are Ordered.	                            Sets are Unordered.
 Lists are Mutable.	                            Sets are mutable but only stored immutable elements.
 Elements can be changed or replaced in Lists.	    Elements cannot be changed or replaced.
@@ -83,12 +83,10 @@ Iterators are implemented using a class and a local variable for iterating is no
 where the evaluation of the expression will be on hold and stored in the memory until the item is called specifically 
 which helps us to avoid repeated evaluation. As lazy evaluation is implemented, it requires only 1 memory location to process the value and 
 when we are using a large dataset then, wastage of RAM space will be reduced the need to load the entire dataset at the same time will not be there.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Using an iterator:
 iter() keyword is used to create an iterator containing an iterable object.
 next() keyword is used to call the next element in the iterable object.
 After the iterable object is completed, to use them again reassign them to the same object.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Generators:
 It is another way of creating iterators in a simple way where it uses the keyword “yield” instead of returning it in a defined function. 
 Generators are implemented using a function. Just as iterators, generators also follow lazy evaluation. 
@@ -235,10 +233,7 @@ As discussed earlier, we can use client side cookies to store a lot of useful da
 For security reasons, Django has a session framework for cookies handling. Sessions are used to abstract the receiving and sending of cookies, data is saved on server side (like in database), and the client side cookie just has a session ID for identification. Sessions are also useful to avoid cases where the user browser is set to ‘not accept’ cookies.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q.diff between union and union all in SQL Query?
-1. Union :
-Union means joining two or more data sets into a single set. In SQL Server, Union is used to combine two queries into a single result set using the select statements. Union extracts all the rows that are described in the query.
-Syntax –query1 UNION query2
-Union holds a few conditions before being used in a query. One such condition is that the rows to be extracted must come from the same columns from the tables.
+1. Union : 
 Two different tables are being used here for extraction of rows yet the column specified for extraction is the same for both. An error occurs if different columns are being used. The data type specified also must be the same for both the queries.
 2. Union All :
 A union is used for extracting rows using the conditions specified in the query while Union All is used for extracting all the rows from a set of two tables.
