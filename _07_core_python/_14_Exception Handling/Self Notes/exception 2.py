@@ -42,3 +42,21 @@ except NameError:
     print("name error occurred")
 finally:
     print("thank you")
+
+
+list1 = ['swapna', True, 0, 14.3]
+for entry in list1:
+    a = int(entry)
+    try:
+        print("the entry is:", entry)
+        r = 1 / int(entry)
+    except ValueError:
+        print("ValueError exception occurred")
+    except ZeroDivisionError:
+        print("ZeroDivisionError exception occurred")
+    except:
+        print("some error occurred")
+    else:
+        print(r)
+    finally:
+        print("End the program")

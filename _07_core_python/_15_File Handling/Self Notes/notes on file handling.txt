@@ -1,0 +1,77 @@
+File Handling in Python:
+--------------------------
+
+Python too supports file handling and allows users to handle files i.e., to read and write files, along with many other file handling options, to operate on files. The concept of file handling has stretched over various other languages, but the implementation is either complicated or lengthy, but like other concepts of Python, this concept here is also easy and short. Python treats file differently as text or binary and this is important. Each line of code includes a sequence of characters and they form text file. Each line of a file is terminated with a special character, called the EOL or End of Line characters like comma {,} or newline character. It ends the current line and tells the interpreter a new one has begun. Let’s start with Reading and Writing files. 
+
+
+Working of open() function:
+---------------------------
+Before performing any operation on the file like read or write, first we have to open that file. For this, we should use Python’s inbuilt function open()
+But at the time of opening, we have to specify the mode, which represents the purpose of the opening file.
+f = open(filename, mode)
+
+Modes in file handling:
+----------------------
+r: open an existing file for a read operation.
+rb:It opens the file to read-only in binary format. The file pointer exists at the    beginning of the file.
+w: open an existing file for a write operation. If the file already contains some    data then it will be overridden.
+a:  open an existing file for append operation. It won’t override existing data.
+r+:  To read and write data into the file. The previous data in the file will not      be deleted.
+rb+:It opens the file to read and write both in binary format. The file pointer     exists at the beginning of the file
+w+: To write and read data. It will override existing data.
+a+: To append and read data from the file. It won’t override existing data.
+
+Ex:
+file = open("file name", "mode")
+
+Working of read() mode:
+-----------------------
+There is more than one way to read a file in Python. If you need to extract a string that contains all characters in the file then we can use file.read(). The full code would work like this: 
+file = open("file.txt", "r")
+print (file.read())
+Another way to read a file is to call a certain number of characters like in the following code the interpreter will read the first five characters of stored data and return it as a string: 
+
+# Python code to illustrate read() mode character wise
+file = open("file.txt", "r")
+print (file.read(5))
+
+Creating a file using write() mode:
+------------------------------------
+Let’s see how to create a file and how write mode works: 
+To manipulate the file, write the following in your Python environment: 
+# Python code to create a file
+file = open('geek.txt','w')
+file.write("This is the write command")
+file.write("It allows us to write in a particular file")
+file.close()
+The close() command terminates all the resources in use and frees the system of this particular program. 
+
+Working of append() mode:
+--------------------------------
+Let’s see how the append mode works: 
+
+it is add at the end.
+# Python code to illustrate append() mode
+file = open('geek.txt','a')
+file.write("This will add this line")
+file.close()
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
