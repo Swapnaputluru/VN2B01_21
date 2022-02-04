@@ -1,0 +1,56 @@
+Errors are 3 types
+1.Compile time Errors --- syntax error, wrong spelling,getting error while writing the code
+1.Logical time Errors --- no issue in input and output will come,but output is wrong
+3.Run time Errors --- divide by 0,name error like this
+
+Syntax Errors:
+--------------
+We have some rules while writing programs in any programming language, such as not using a space when defining a variable name, adding a colon (:) after the if statement, and so on. If we don’t follow these rules, we run into Syntax Errors and our program refuses to execute until we squash those errors.
+
+Exception Handling:
+-------------------
+But there are occasions when the program is syntactically correct and it still throws up an error when we try to execute the program. What’s going on here? Well, these errors detected during the execution are called exceptions. And dealing with these errors is called exception handling.
+
+
+Advantages of Exception Handling:
+---------------------------------
+1: Separating Error Handling Code from "Regular" Code
+2: Propagating Errors Up the Call Stack
+3: Grouping Error Types and Error Differentiation
+
+Common Exceptions:
+------------------
+ZeroDivisionError: It is raised when you try to divide a number by zero
+ImportError: It is raised when you try to import the library that is not installed or you have provided the wrong name
+IndexError: Raised when an index is not found in a sequence. For example, if the length of the list is 10 and you are trying to access the 11th index from that list, then you will get this error
+IndentationError: Raised when indentation is not specified properly
+ValueError: Raised when the built-in function for a data type has the valid type of arguments, but the arguments have invalid values specified
+Exception: Base class for all exceptions. If you are not sure about which exception may occur, you can use the base class. It will handle all of them
+
+Blocks:
+--------
+The try block -- lets you test a block of code for errors.
+The except block -- lets you handle the error.
+The else block -- lets you execute code when there is no error.
+The finally block --lets you execute code, regardless of the result of the try- and except blocks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

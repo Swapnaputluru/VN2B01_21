@@ -1,0 +1,16 @@
+print("-----------seek with 20 and readline-------------")
+seek_file = open("seek.txt", "r")
+seek_file.seek(20,0)
+print("The cursor position:", seek_file.tell())
+print(seek_file.readline())
+print("-----------seek with 50 and readlines-------------")
+seek_file.seek(50, 0)
+print("The cursor position:", seek_file.tell())
+print(seek_file.readlines())
+print("-----------seek with 30 and read-------------")
+seek_file.seek(30,0)
+print("The cursor position:", seek_file.tell())
+print(seek_file.read())
+
+
+print("Total letters in file is:",seek_file.tell())
