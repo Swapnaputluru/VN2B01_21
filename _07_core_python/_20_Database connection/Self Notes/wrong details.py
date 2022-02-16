@@ -12,5 +12,4 @@ except Exception as error:
     print(error)
 
 finally:
-    cursor.close()
-    conn.close()
+    print("Good luck!!!")

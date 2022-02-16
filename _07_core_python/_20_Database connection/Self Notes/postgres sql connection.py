@@ -6,7 +6,8 @@ conn = psycopg2.connect(database="postgres",
                             port="5432")
 
 cursor = conn.cursor()
-quary1 = "create table login(mailid varchar(20),moible_no varchar(10), password varchar(10))"
+
+quary1 = "create table if not exists login(mailid varchar(20),moible_no varchar(10), password varchar(10))"
 cursor.execute(quary1)
 
 records = [("swapna@gmail.com", '8765432122', 'abcd'),
@@ -16,5 +17,10 @@ records = [("swapna@gmail.com", '8765432122', 'abcd'),
 for record in records:
     query2 = "INSERT INTO login VALUES(%s, %s, %s)"
     cursor.execute(query2, record)
-
+cursor.execute("select * from login")
+# print(cursor.fetchall())
+for i in cursor.fetchall():
+    print(i)
+#quary3 =
+print("successfully created")
 conn.commit()
