@@ -1,0 +1,57 @@
+{% extends 'reels/base.html' %}
+
+{% block content %}
+<style>
+body{
+background-color:wheat
+}
+
+    li,h4{
+      font-size:30;
+      color: blue;
+      font-style:italic
+   }
+ h1{
+      font-size:50;
+      color: red;
+      font-style:italic
+   }
+
+
+</style>
+<title>Group</title>
+<h1>Using for loop</h1>
+{% for course in key_courses %}
+<li>{{course}}</li>
+{% endfor %}
+
+<h1>Using if condition</h1>
+{% for key in key_s_no %}
+{% if key == 1 %}
+<h4>s_no is 1 🧚‍</h4>
+{% elif key == 2 %}
+<h4>s_no is 2 🧚‍</h4>
+{% elif key == 3 %}
+<h4>s_no is 3🧚‍♀️</h4>
+{% elif key == 4 %}
+<h4>s_no is 4🧚‍♀️</h4>
+{% elif key == 5 %}
+<h4>s_no is 5🧚‍♀️</h4>
+{% else  %}
+<h4>out of range☹</h4>
+{% endif %}
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
