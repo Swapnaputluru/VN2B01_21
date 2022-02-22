@@ -43,7 +43,7 @@ def post_method(request):
 def demo_rend2(request, name, id):
     data = {'key_name' : name, 'key_id' : id}
     Data.objects.create(name=name,id=id)
-    return render(request, "messenger/parameters.html", data)
+    return render(request,"messenger/parameters.html", data)
 
 @csrf_exempt
 def post_method1(request):

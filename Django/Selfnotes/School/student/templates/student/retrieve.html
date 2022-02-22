@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retrieving data</title>
+</head>
+<body>
+{% block content %}
+{% for i in data %}
+{{ i.Student_name }}<br/>
+{{ i.Student_id }}<br/>
+{{ i.Telugu_marks }}<br/>
+{{ i.English_marks  }}<br/>
+{{ i.Hindi_marks  }}<br/>
+{{ i.kannada_marks  }}<br/>
+{{ i.Maths_marks  }}<br/>
+{{ i.Science_marks  }}<br/>
+{% endfor %}}
+{% endblock %}
+</body>
+</html>
